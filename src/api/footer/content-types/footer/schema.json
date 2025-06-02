@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Credits": {
+      "type": "richtext",
+      "default": "All Rights Reserved © 2025 | Made by KeelanJon",
+      "required": false
+    }
+  }
+}
