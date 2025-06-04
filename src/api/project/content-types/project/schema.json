@@ -15,9 +15,6 @@
       "type": "string",
       "required": true
     },
-    "content": {
-      "type": "richtext"
-    },
     "featuredImage": {
       "type": "media",
       "multiple": false,
@@ -36,6 +33,19 @@
       "relation": "manyToMany",
       "target": "api::technology.technology",
       "mappedBy": "projects"
+    },
+    "description": {
+      "type": "text"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.slider",
+        "shared.seo",
+        "shared.rich-text",
+        "shared.quote",
+        "shared.media"
+      ]
     }
   }
 }
