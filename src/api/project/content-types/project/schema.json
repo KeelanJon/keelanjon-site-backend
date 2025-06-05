@@ -46,6 +46,9 @@
         "shared.quote",
         "shared.media"
       ]
+    },
+    "live_project": {
+      "type": "string"
     }
   }
 }

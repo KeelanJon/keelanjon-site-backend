@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home",
     "pluralName": "homes",
-    "displayName": "Home"
+    "displayName": "Home",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,6 +25,11 @@
       "components": [
         "shared.seo"
       ]
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
     }
   }
 }

@@ -543,6 +543,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
 export interface ApiHomeHome extends Struct.SingleTypeSchema {
   collectionName: 'homes';
   info: {
+    description: '';
     displayName: 'Home';
     pluralName: 'homes';
     singularName: 'home';
@@ -558,6 +559,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::home.home'> &
       Schema.Attribute.Private;
+    projects: Schema.Attribute.Relation<'oneToMany', 'api::project.project'>;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
@@ -631,6 +633,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     description: Schema.Attribute.Text;
     featuredImage: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    live_project: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
