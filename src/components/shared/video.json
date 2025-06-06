@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_videos",
+  "info": {
+    "displayName": "Video",
+    "icon": "landscape"
+  },
+  "options": {},
+  "attributes": {
+    "source": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

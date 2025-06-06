@@ -62,6 +62,17 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedVideo extends Struct.ComponentSchema {
+  collectionName: 'components_shared_videos';
+  info: {
+    displayName: 'Video';
+    icon: 'landscape';
+  };
+  attributes: {
+    source: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -70,6 +81,7 @@ declare module '@strapi/strapi' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'shared.video': SharedVideo;
     }
   }
 }

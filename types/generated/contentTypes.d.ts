@@ -626,6 +626,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
         'shared.rich-text',
         'shared.quote',
         'shared.media',
+        'shared.video',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;
