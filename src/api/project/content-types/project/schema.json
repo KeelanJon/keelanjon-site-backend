@@ -49,6 +49,11 @@
     },
     "live_project": {
       "type": "string"
+    },
+    "subtitle": {
+      "type": "string",
+      "unique": false,
+      "required": true
     }
   }
 }
