@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "works",
+  "collectionName": "contacts",
   "info": {
-    "singularName": "work",
-    "pluralName": "works",
-    "displayName": "Work",
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Contact",
     "description": ""
   },
   "options": {
@@ -20,23 +20,15 @@
       "targetField": "title",
       "required": true
     },
-    "projects": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::project.project"
-    },
-    "Header": {
-      "type": "text"
-    },
     "blocks": {
       "type": "dynamiczone",
       "components": [
         "shared.video",
         "shared.slider",
+        "shared.seo",
         "shared.rich-text",
         "shared.quote",
-        "shared.media",
-        "shared.seo"
+        "shared.media"
       ]
     }
   }
