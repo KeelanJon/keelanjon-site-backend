@@ -24,6 +24,10 @@
         "shared.slider",
         "shared.seo"
       ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }
