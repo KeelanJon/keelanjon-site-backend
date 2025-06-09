@@ -1,43 +1,38 @@
-# 🚀 Getting started with Strapi
+# 🧠 KeelanJon Personal Website — Backend
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+This is the backend for [keelanjon.com](https://keelanjon.com), built with [Strapi](https://strapi.io/). It powers the content for the [frontend site](https://github.com/KeelanJon/keelanjon-site-frontend) and provides a flexible, headless CMS for managing pages, projects, and other site content.
 
-### `develop`
+---
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+## 🔗 Related Repositories
 
+- **Frontend**: [keelanjon-site-frontend](https://github.com/KeelanJon/keelanjon-site-frontend)
+
+---
+
+## 🚀 Getting Started
+
+These instructions will help you get the project running locally for development and testing.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/KeelanJon/keelanjon-site-backend.git
+cd keelanjon-site-backend
 ```
-npm run develop
+
+### 2. Install Dependencies
+
+```bash
+npm install
 # or
-yarn develop
+yarn install
 ```
 
-### `start`
+### 3. Run development Server
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
-
-```
-npm run start
-# or
-yarn start
-```
-
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
-
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
-
-```
-yarn strapi deploy
+```bash
+npm run dev
 ```
 
 ## 📚 Learn more
@@ -58,4 +53,4 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 
 ---
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+<sub>Created by [KeelanJon](https://keelanjon.com).</sub>
