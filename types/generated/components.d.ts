@@ -1,5 +1,17 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface SharedCarousel extends Struct.ComponentSchema {
+  collectionName: 'components_shared_carousels';
+  info: {
+    displayName: 'carousel';
+    icon: 'picture';
+  };
+  attributes: {
+    carousel: Schema.Attribute.Media<'images' | 'files', true> &
+      Schema.Attribute.Required;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -76,6 +88,7 @@ export interface SharedVideo extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'shared.carousel': SharedCarousel;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;

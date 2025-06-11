@@ -40,12 +40,10 @@
     "blocks": {
       "type": "dynamiczone",
       "components": [
-        "shared.slider",
         "shared.seo",
         "shared.rich-text",
-        "shared.quote",
-        "shared.media",
-        "shared.video"
+        "shared.video",
+        "shared.carousel"
       ]
     },
     "live_project": {

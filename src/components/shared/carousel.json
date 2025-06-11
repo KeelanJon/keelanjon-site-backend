@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_carousels",
+  "info": {
+    "displayName": "carousel",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "carousel": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}
