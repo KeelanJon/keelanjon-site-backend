@@ -385,6 +385,7 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
     draftAndPublish: false;
   };
   attributes: {
+    bio: Schema.Attribute.RichText & Schema.Attribute.Required;
     blocks: Schema.Attribute.DynamicZone<
       [
         'shared.media',

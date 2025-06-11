@@ -28,6 +28,10 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "bio": {
+      "type": "richtext",
+      "required": true
     }
   }
 }
